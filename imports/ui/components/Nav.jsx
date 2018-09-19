@@ -5,9 +5,7 @@ class Nav extends Component {
     super(props);
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
     return (

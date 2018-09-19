@@ -9,10 +9,10 @@ export default class Home extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="home-wrapper">
         <Nav />
         <Cases />
-      </React.Fragment>
+      </div>
     )
   }
 }
