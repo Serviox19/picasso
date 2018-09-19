@@ -9,13 +9,13 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav id="nav">
+      <aside id="nav">
         <div className="nav-left">
           <div className="wrapper">
             <h3>About</h3>
           </div>
         </div>
-      </nav>
+      </aside>
     );
   }
 }

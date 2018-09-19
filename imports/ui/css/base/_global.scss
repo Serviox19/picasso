@@ -1,6 +1,10 @@
 // Global styles
 
 #main-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+}
+
+.home-wrapper {
+  position: relative;
 }
