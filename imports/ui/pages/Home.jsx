@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../components/Nav';
+import Cases from '../components/Cases';
 
 export default class Home extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export default class Home extends Component {
     return (
       <React.Fragment>
         <Nav />
+        <Cases />
       </React.Fragment>
     )
   }
