@@ -1,10 +1,10 @@
 import React from 'react';
+import Home from '../pages/Desktop/Home';
 
-export const DesktopLayout = () => {
+export const DesktopLayout = ({ content }) => {
   return (
-    <div>
-      <h2>Desktop Layout</h2>
-      {/* Desktop Components Here */}
+    <div id="desktop">
+      <Home />
     </div>
   );
 }

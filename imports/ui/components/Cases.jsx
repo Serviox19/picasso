@@ -25,7 +25,9 @@ export default class Cases extends Component {
     })
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    //jquery
+  }
 
   render() {
     return (

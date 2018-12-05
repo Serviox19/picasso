@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 //Layouts
 import { DesktopLayout } from '../layouts/Desktop';
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   updateView() {
-    this.setState({ isDesktop: window.innerWidth >= 1000 });
+    this.setState({ isDesktop: window.innerWidth >= 900 });
   }
 
   render() {
@@ -30,7 +30,7 @@ class App extends Component {
 
     return (
       <div id="main-container">
-        {isDesktop ? <DesktopLayout /> : <MobileLayout />}
+        {isDesktop ? <DesktopLayout /> : <MobileLayout /> }
       </div>
     );
   }

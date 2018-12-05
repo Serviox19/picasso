@@ -1,10 +1,10 @@
 import React from 'react';
+import Home from '../pages/Mobile/Home';
 
 export const MobileLayout = () => {
   return (
-    <div id="mobile-site">
-      <h2>Mobile Layout</h2>
-      {/* All Mobile Components Here */}
+    <div id="mobile">
+      <Home />
     </div>
   )
 }
