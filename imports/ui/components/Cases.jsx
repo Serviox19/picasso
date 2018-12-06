@@ -16,7 +16,7 @@ export default class Cases extends Component {
   renderBlocks() {
     return this.blocks().map(block => {
       return (
-        <section>
+        <section key={block.title}>
           <div className="block">
             <h2>{block.title}</h2>
           </div>

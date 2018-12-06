@@ -5,15 +5,13 @@ export default class HomeMobile extends Component {
     super(props)
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
     return (
       <div className="mobile-home-wrapper">
         {/* Place mobile components */}
-        <h2>Mobile Layout</h2>
+        <h2>Mobile Home Page</h2>
       </div>
     );
   }
