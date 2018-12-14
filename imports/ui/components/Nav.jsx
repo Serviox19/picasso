@@ -12,7 +12,7 @@ class Nav extends Component {
       <aside id="nav">
         <div className="nav-left">
           <div className="wrapper">
-            <h3>About</h3>
+            <h3 id="about-toggle">About</h3>
           </div>
         </div>
       </aside>

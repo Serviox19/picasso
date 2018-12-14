@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Cases extends Component {
+export default class Projects extends Component {
   constructor(props) {
     super(props);
   }
@@ -31,7 +31,7 @@ export default class Cases extends Component {
 
   render() {
     return (
-      <div className="cases">
+      <div className="projects">
         <div className="container">
           {this.renderBlocks()}
         </div>

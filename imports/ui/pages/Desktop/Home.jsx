@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../../components/Nav';
-import Cases from '../../components/Cases';
+import Projects from '../../components/Projects';
 import Header from '../../components/Header';
+import About from '../../components/About';
 import HomeMobile from '../Mobile/Mobile-Home';
 
 export default class HomeDesktop extends Component {
@@ -15,6 +16,17 @@ export default class HomeDesktop extends Component {
   componentDidMount() {
     this.updateView();
     window.addEventListener("resize", this.updateView);
+
+    //Scroll up and down detection/movement
+    $(window).bind('mousewheel', function(event) {
+      console.log(event.originalEvent);
+      // event.preventDefault();
+      if (event.originalEvent.deltaY > 0) {
+        //scroll down
+      } else {
+        //scroll up
+      }
+    });
   }
 
   componentWillUnmount() {
@@ -32,9 +44,10 @@ export default class HomeDesktop extends Component {
       <React.Fragment>
         {isDesktop ?
           <div className="desktop-home-wrapper">
+            <About />
             <Nav />
             <Header />
-            <Cases />
+            <Projects />
           </div> : <HomeMobile />}
       </React.Fragment>
 
