@@ -6,7 +6,7 @@ export default class About extends Component {
   }
 
   componentDidMount() {
-
+    
   }
 
   render() {

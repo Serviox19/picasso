@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scrollbar from 'smooth-scrollbar';
 
 export default class Projects extends Component {
   constructor(props) {
@@ -29,9 +30,7 @@ export default class Projects extends Component {
     })
   }
 
-  componentDidMount() {
-    //jquery
-  }
+  componentDidMount() {}
 
   render() {
     return (

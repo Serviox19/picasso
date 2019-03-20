@@ -4,6 +4,7 @@ import Projects from '../../components/Projects';
 import Header from '../../components/Header';
 import About from '../../components/About';
 import HomeMobile from '../Mobile/Mobile-Home';
+import Scrollbar from 'smooth-scrollbar';
 
 export default class HomeDesktop extends Component {
   constructor(props) {
@@ -16,17 +17,6 @@ export default class HomeDesktop extends Component {
   componentDidMount() {
     this.updateView();
     window.addEventListener("resize", this.updateView);
-
-    //Scroll up and down detection/movement
-    $(window).bind('mousewheel', function(event) {
-      console.log(event.originalEvent);
-      // event.preventDefault();
-      if (event.originalEvent.deltaY > 0) {
-        //scroll down
-      } else {
-        //scroll up
-      }
-    });
   }
 
   componentWillUnmount() {
