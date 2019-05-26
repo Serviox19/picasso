@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import HomeDesktop from '../pages/Desktop/Home';
-import HomeMobile from '../pages/Mobile/Mobile-Home';
+import HomeMobile from '../pages/Mobile/Home';
 
-class App extends Component {
+class HomeLayout extends Component {
   constructor(props) {
     super(props);
 
@@ -35,4 +35,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default HomeLayout;
