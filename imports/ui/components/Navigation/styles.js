@@ -20,15 +20,10 @@ export const Wrapper = styled.div`
 `
 
 export const AboutToggle = styled.h3`
-  color: ${props => props.toggled ? "grey" : "blue"};
+  color: ${props => props.aboutVisible ? "#FFFFFF" : "blue"};
   opacity: .5;
   white-space: nowrap;
   cursor: pointer;
   -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-
-  &:hover {
-    color: #FFF;
-    transition: all 0.3s ease-in-out;
-  }
+  transition: opacity .3s
 `

@@ -1,4 +1,6 @@
-.header {
+import styled from 'styled-components';
+
+export const StyledHeader = styled.div`
   opacity: 0;
   height: 100vh;
   width: 100%;
@@ -9,4 +11,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover
-}
+`

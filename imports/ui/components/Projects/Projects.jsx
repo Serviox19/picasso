@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Scrollbar from 'smooth-scrollbar';
+import styled from 'styled-components';
+import { StyledProjects, Container, Section, Block } from './style.js'
 
 export default class Projects extends Component {
   constructor(props) {
@@ -19,13 +21,13 @@ export default class Projects extends Component {
   renderBlocks() {
     return this.blocks().map(block => {
       return (
-        <section key={block._id}>
+        <Section key={block._id}>
           <a style={{textDecoration: 'none'}} href={block.url} target="_blank">
-            <div className="block">
+            <Block>
               <h2>{block.name}</h2>
-            </div>
+            </Block>
           </a>
-        </section>
+        </Section>
       )
     })
   }
@@ -34,11 +36,11 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <div className="projects">
-        <div className="container">
+      <StyledProjects>
+        <Container>
           {this.renderBlocks()}
-        </div>
-      </div>
+        </Container>
+      </StyledProjects>
     );
   }
 }
