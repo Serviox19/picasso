@@ -8,11 +8,8 @@ export default class Projects extends Component {
     super(props);
 
     this.state = {
-      projects: {
-        all: true,
-        ecommerce: false,
-        side_project: false
-      }
+      showAllProjects: true,
+      showEcommerce: false
     }
   }
 
@@ -32,13 +29,8 @@ export default class Projects extends Component {
   }
 
   renderBlocks() {
-    let type;
-    // update variable type with current state
-    // this.state.projetcs.all ? type = 'all' : null;
-    // this.state.projects.ecommerce ? type = 'ecommerce' : null;
-
     return this.blocks().filter((project) => {
-      return project.type === `${type}`;
+      return this.state.showEcommerce ? project.type === 'ecommerce' : project
     }).map((project) => {
       return (
         <Section key={project._id}>
@@ -52,16 +44,20 @@ export default class Projects extends Component {
     })
   }
 
-  componentWillUpdate() {}
-
   componentDidMount() {}
 
   render() {
     return (
       <StyledProjects>
         <div>
-          <button onClick={() => this.setState({  })}>All</button>
-          <button onClick={() => this.setState({  })}>Ecommerce</button>
+          <button
+            onClick={() => this.setState({ showAllProjects: true, showEcommerce: false })}>
+            All
+          </button>
+          <button
+            onClick={() => this.setState({ showEcommerce: true, showAllProjects: false })}>
+            Ecommerce
+          </button>
         </div>
         <Container>
           {this.renderBlocks()}
