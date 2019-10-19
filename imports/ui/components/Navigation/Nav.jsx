@@ -34,16 +34,13 @@ class Nav extends Component {
           <Wrapper>
             <AboutLink
               id="about-toggle"
-              aboutVisible={this.props.aboutVisible}
               onClick={this.props.toggleAbout}>About
             </AboutLink>
             <BlogLink
               id="blog-link"
-              aboutVisible={this.props.aboutVisible}
               onClick={this.handleBlogLink}>Blog</BlogLink>
             <ProjetcsLink
               id="projects-link"
-              aboutVisible={this.props.aboutVisible}
               onClick={this.handleProjectsClick}>Projects
             </ProjetcsLink>
           </Wrapper>

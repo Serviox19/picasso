@@ -7,7 +7,7 @@ export const StyledProjects = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #000
+  background: #292929
 `
 
 export const Container = styled.div`
