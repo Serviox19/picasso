@@ -15,15 +15,47 @@ export const NavLeft = styled.div`
 `
 
 export const Wrapper = styled.div`
-  display: inline-block;
+  display: inline-flex;
   padding: 10px
 `
 
-export const AboutToggle = styled.h3`
+export const AboutLink = styled.h3`
   color: ${props => props.aboutVisible ? "#FFFFFF" : "blue"};
   opacity: .5;
   white-space: nowrap;
   cursor: pointer;
   -webkit-transition: opacity .3s;
   transition: opacity .3s
+
+  &:hover {
+    color: #FFFFFF
+  }
+`
+
+export const ProjetcsLink = styled.h3`
+  color: ${props => props.aboutVisible ? "FFFFFF" : "blue"};
+  opacity: .5;
+  margin-left: 1em
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s
+
+  &:hover {
+    color: #FFFFFF
+  }
+`
+
+export const BlogLink = styled.h3`
+  color: ${props => props.aboutVisible ? "FFFFFF" : "blue"};
+  opacity: .5;
+  margin-left: 1em
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s
+
+  &:hover {
+    color: #FFFFFF
+  }
 `

@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { AboutToggle, StyledNav, NavLeft, Wrapper } from './styles.js';
+import { AboutLink, BlogLink, ProjetcsLink, StyledNav, NavLeft, Wrapper } from './styles.js';
 
 class Nav extends Component {
   constructor(props) {
     super(props);
 
     console.log(this.props);
+
+    this.handleProjectsClick = this.handleProjectsClick.bind(this)
+    this.handleBlogLink = this.handleBlogLink.bind(this)
+  }
+
+  handleBlogLink() {
+    window.location = '/blog';
+  }
+
+  handleProjectsClick() {
+    alert('event worked')
+    //code to scroll to projects section
   }
 
   componentDidUpdate() {
@@ -20,11 +32,20 @@ class Nav extends Component {
       <StyledNav id="nav">
         <NavLeft>
           <Wrapper>
-            <AboutToggle
+            <AboutLink
               id="about-toggle"
               aboutVisible={this.props.aboutVisible}
               onClick={this.props.toggleAbout}>About
-            </AboutToggle>
+            </AboutLink>
+            <BlogLink
+              id="blog-link"
+              aboutVisible={this.props.aboutVisible}
+              onClick={this.handleBlogLink}>Blog</BlogLink>
+            <ProjetcsLink
+              id="projects-link"
+              aboutVisible={this.props.aboutVisible}
+              onClick={this.handleProjectsClick}>Projects
+            </ProjetcsLink>
           </Wrapper>
         </NavLeft>
       </StyledNav>
