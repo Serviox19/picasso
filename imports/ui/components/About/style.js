@@ -1,5 +1,17 @@
 import styled, { keyframes } from 'styled-components';
 
+export const wiggle = keyframes`
+  25% {
+    transform:translateX(-50px);
+  }
+  50% {
+    transform:translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`
+
 
 export const AboutSection = styled.div`
   min-height: 100vh;
@@ -34,7 +46,8 @@ export const KnowMore = styled.h1`
   width: 100%;
   font-size: 6vw;
   margin: 4em auto;
-  text-align: center
+  text-align: center;
+  animation: ${wiggle} 1.3s infinite ease
 `
 
 export const OverlayText = styled.h2`
@@ -55,10 +68,15 @@ export const SecondIntro = styled.div`
 
 export const SecondIntroCopy = styled.h1`
   display: block;
-  font-size: 2.5em;
-  line-height: 4em;
+  font-size: 2em;
+  line-height: 3em;
   font-weight: 500;
   padding-bottom: 4em
+`
+
+export const Emoji = styled.h1`
+  display: inline-block;
+  font-size: 1.75em
 `
 
 
