@@ -6,8 +6,7 @@ export const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background: #292929
+  align-items: center
 `
 
 export const Container = styled.div`

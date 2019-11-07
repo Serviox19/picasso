@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../../components/Navigation/Nav';
 import Projects from '../../components/Projects/Projects';
-import Header from '../../components/Header/Desktop';
+import Header from '../../components/Header/Header';
 import About from '../../components/About/About';
-import Scrollbar from 'smooth-scrollbar';
 
 export default class HomeDesktop extends Component {
   constructor(props) {
@@ -16,6 +15,7 @@ export default class HomeDesktop extends Component {
 
 
   componentDidMount() {
+
     $('.header').css({
       'opacity': '1',
       'transition': 'all .8s ease-in'
@@ -25,12 +25,14 @@ export default class HomeDesktop extends Component {
   render() {
 
     return (
-      <div className="desktop-home-wrapper">
+      <React.Fragment>
         <Nav />
         <Header />
-        <About />
-        <Projects />
-      </div>
+        <div className="desktop-home-wrapper">
+          <About />
+          <Projects />
+        </div>
+      </React.Fragment>
     )
   }
 }

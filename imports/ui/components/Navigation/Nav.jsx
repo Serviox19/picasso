@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { AboutLink, BlogLink, ProjetcsLink, StyledNav, NavLeft, Wrapper } from './styles.js';
+import Scrollbar from 'smooth-scrollbar';
 
 class Nav extends Component {
   constructor(props) {

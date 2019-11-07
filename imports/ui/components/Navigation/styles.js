@@ -11,7 +11,7 @@ export const NavLeft = styled.div`
   z-index: 100;
   transform: rotateZ(-90deg) translateX(-50%);
   transform-origin: 0 50%;
-  top: 50%
+  top: 48%
 `
 
 export const Wrapper = styled.div`

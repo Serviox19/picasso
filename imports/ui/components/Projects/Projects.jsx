@@ -19,12 +19,7 @@ export default class Projects extends Component {
       {"_id": 2, "name": "9h-page", "type": "ecommerce", "url": "", "title": "9H-Nano Car Coating", "description": "Custom ecommerce webpage for our popular and great selling car polish", "landing-img": ""},
       {"_id": 3, "name": "phone-mount", "type": "ecommerce", "url": "", "title": "Automatic Locking Phone Mount", "description": "", "landing-img": ""},
       {"_id": 4, "name": "sticky-pad", "type": "ecommerce", "url": "", "title": "Best Gel Pad", "description": "", "landing-img": ""},
-      {"_id": 5, "name": "laundry-betty", "type": "ecommerce", "url": "", "title": "Laundry Betty", "description": "", "landing-img": ""},
-      {"_id": 6, "name": "fur-brush", "type": "", "url": "", "title": "", "description": "Magic Fur Brush", "landing-img": ""},
-      {"_id": 7, "name": "", "type": "", "url": "", "title": "", "description": "", "landing-img": ""},
-      {"_id": 8, "name": "", "type": "", "url": "", "title": "", "description": "", "landing-img": ""},
-      {"_id": 9, "name": "", "type": "", "url": "", "title": "", "description": "", "landing-img": ""},
-      {"_id": 10, "name": "", "type": "", "url": "", "title": "", "description": "", "landing-img": ""}
+      {"_id": 5, "name": "laundry-betty", "type": "ecommerce", "url": "", "title": "Laundry Betty", "description": "", "landing-img": ""}
     ]
   }
 
@@ -49,7 +44,7 @@ export default class Projects extends Component {
   render() {
     return (
       <StyledProjects>
-        <div>
+        <div id="button-wraper">
           <button
             onClick={() => this.setState({ showAllProjects: true, showEcommerce: false })}>
             All

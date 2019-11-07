@@ -12,7 +12,7 @@ export default class Header extends Component {
   render() {
     return (
       <StyledHeader className="header">
-        <h2>Home header <br /> (Prob put img here!)</h2>
+        <h2></h2>
       </StyledHeader>
     );
   }

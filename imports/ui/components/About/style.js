@@ -22,6 +22,7 @@ export const AboutSection = styled.div`
   align-items: center;
   background: #FFFFFF;
   padding: 2em 0 5em;
+  overflow: hidden;
   font-family: 'HelveticaNeue', sans-serif
 `
 
@@ -74,7 +75,7 @@ export const SecondIntroCopy = styled.h1`
   padding-bottom: 4em
 `
 
-export const Emoji = styled.h1`
+export const Emoji = styled.span`
   display: inline-block;
   font-size: 1.75em
 `
